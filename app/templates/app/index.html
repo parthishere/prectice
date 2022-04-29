@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+   
+  <head>
+    <title>Real Time Face Recognition</title>
+  </head>
+  <body>
+    <h1>Real Time Face Recognition</h1>
+	<a href="{% url 'app:face-detect' %}"> detect </a>
+  <video autoplay class='video' muted="muted" id='video1'> </video>
+  <video autoplay class="video" muted="muted" id="video2"></video>
+  <button class='btn-press' id="btn">Press me🥵</button>
+  </body>
+
+  <script src="{% static 'js/main.js' %}"></script>
+</html>
